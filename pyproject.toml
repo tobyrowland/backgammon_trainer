@@ -1,0 +1,13 @@
+[project]
+name = "bgcoach"
+version = "0.1.0"
+description = "Play backgammon against GNU Backgammon, then have Claude coach you"
+requires-python = ">=3.9"
+dependencies = ["anthropic>=0.40.0"]
+
+[project.scripts]
+bgcoach = "bgcoach.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
